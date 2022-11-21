@@ -1,0 +1,116 @@
+.container{
+    /* border: 1px solid black; */
+ width: 100%;
+}
+.card{
+    /* border: 1px solid black; */
+    width: 16rem;
+    height: 25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 0 15px -2px #ffffff;
+    padding: 1.1rem 1.8rem;
+    background-color:aliceblue;
+}
+.image_div{
+    height: 30%;
+    /* border: 1px solid black; */
+}
+
+
+
+@media (min-width:1024px){
+    .container{
+        /* border: 1px solid black; */
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        padding: 2rem;
+        grid-gap: 1.5rem;
+    }
+    
+}
+
+@media (min-width:769px) and (max-width:1023px){
+    .container{
+        /* border: 1px solid black; */
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 1rem;
+        grid-gap: 1.5rem;
+       
+        grid-gap: 1.5rem;
+    }
+    .card{
+       margin: auto;
+    }
+    
+}
+
+
+
+@media (max-width:768px){
+    .container{
+        /* border: 1px solid black; */
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr ;
+    }
+    .card{
+        margin: auto;
+        margin-top: 1.5rem;
+     }
+}
+.navbar{
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem;
+    font-size: 1.5rem;
+    font-family: serif;
+    font-weight: bold;
+}
+
+.select{
+    width: fit-content;
+    /* border: 1px solid black; */
+    padding: 1rem;
+    background-color: #53b9b9;
+    color: white;
+}
+.select:hover{
+    background-color: rgb(255, 188, 199);
+}
+.select>select{
+    font-size: 1.3rem;
+    background-color: #4ed592;
+    color: white;
+    border: 0px;
+}
+.select>select:hover{
+  background-color: rgb(220, 190, 134);
+}
+body{
+    background-color: rgb(46, 40, 40);
+}
+
+.information{
+    width: 100%;
+    height: 55%;
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+
+}
+.information>div{
+    font-size: 17px;
+    font-weight: bold;
+}
+.img{
+    width: 100%;
+    height: 100%;
+}
